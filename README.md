@@ -1,13 +1,8 @@
-What is noblejs-promise-pool?
+<h1>What is noblejs-promise-pool?</h1>
 
 It's promise pool with zero runtime dependencies, an extremely simple base case, and a myriad of configuration options if you need them, such as retries, recurrences, metrics, behaviors, events, and a whole lot more.
 
-Installation is simple:
-
-```bash
-npm install noblejs-promise-pool
-
-##Features
+<h1>Features</h1>
 
 - A broad array of configuration options, and most can be set globally on the pool, but also overridden on a per-job basis if needed.
 - Retries for resubmitting jobs that result in an error
@@ -23,7 +18,7 @@ npm install noblejs-promise-pool
 - Optional job metadata with a few optional fields and an optional custom type field if needed.
 And much more!
 
-##Getting started
+<h1>Getting started</h1>
 
 Configuration is simple. Just instantiate a new pool:
 
