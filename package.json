@@ -1,0 +1,49 @@
+{
+    "name": "@noblejs/promise-pool",
+    "version": "0.1.0",
+    "description": "A robust promise pool for Node applications",
+    "author": "Noble Brown",
+    "license": "MIT",
+    "devDependencies": {
+        "eslint-plugin-compat": "^7.0.2",
+        "eslint-plugin-jsdoc": "^63.0.0",
+        "eslint-plugin-n": "^18.0.1",
+        "c8": "^11.0.0",
+        "chai": "^6.2.2",
+        "mocha": "^11.7.6",
+        "tsx": "^4.22.4",
+        "typescript-eslint": "^8.60.0",
+        "@types/chai": "^5.2.3",
+        "@types/mocha": "^10.0.10",
+        "@types/node": "^25.9.2",
+        "typescript": "^6.0.3"
+    },
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "browserslist": [
+        "> 0.5%",
+        "last 2 versions",
+        "not dead",
+        "not op_mini all"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "prepublishOnly": "npx tsc"
+    },
+    "keywords": ["promise", "pool", "promisepool", "promise-pool", "async", "concurrency"],
+    "type": "module",
+    "engines": {
+        "node": ">=15.4.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Noblebrown/noblejs-promise-pool.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Noblebrown/noblejs-promise-pool/issues"
+    },
+    "homepage": "https://github.com/Noblebrown/noblejs-promise-pool#readme"
+}
