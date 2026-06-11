@@ -4,6 +4,9 @@
     "description": "A robust promise pool for Node applications",
     "author": "Noble Brown",
     "license": "MIT",
+    "publishConfig": {
+        "access": "public"
+    },
     "devDependencies": {
         "eslint-plugin-compat": "^7.0.2",
         "eslint-plugin-jsdoc": "^63.0.0",
