@@ -3,10 +3,14 @@ name: Publish to NPM
 on:
   release:
     types: [published]
-
+  workflow_dispatch:
+  
 jobs:
   publish:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
@@ -14,8 +18,11 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
           registry-url: 'https://registry.npmjs.org'
+
+      - name: Update npm to latest
+        run: npm install -g npm@latest 
 
       - name: Install Dependencies
         run: npm ci
@@ -24,6 +31,4 @@ jobs:
         run: npm test
 
       - name: Publish Package
-        run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npm publish --provenance
