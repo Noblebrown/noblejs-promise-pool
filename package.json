@@ -33,6 +33,7 @@
         "not op_mini all"
     ],
     "scripts": {
+        "test": "mocha",
         "build": "tsc",
         "prepublishOnly": "npx tsc"
     },
